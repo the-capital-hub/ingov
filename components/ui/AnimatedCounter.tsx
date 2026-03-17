@@ -51,7 +51,7 @@ export default function AnimatedCounter({ value, label }: AnimatedCounterProps) 
 
   return (
     <div ref={ref} className="text-center group">
-      <div className="font-heading text-4xl lg:text-5xl font-black text-dark mb-2 transition-transform duration-500 group-hover:scale-110 group-hover:text-highlight">
+      <div className="font-body text-4xl lg:text-5xl font-black text-dark mb-2 transition-transform duration-500 group-hover:scale-110 group-hover:text-highlight">
         {prefix}{isInView ? displayed : '0'}{suffix}
       </div>
       <p className="text-sm uppercase tracking-wider text-muted font-bold">{label}</p>

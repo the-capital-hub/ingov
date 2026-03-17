@@ -68,7 +68,7 @@ export default function ROIImpact() {
             <div className="absolute top-0 left-0 w-1 h-full bg-highlight group-hover:w-2 transition-all duration-300" />
             <div className="absolute -right-10 -bottom-10 w-32 h-32 bg-highlight/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500" />
             <div className="relative">
-              <div className="font-heading text-6xl font-black text-dark mb-3 tracking-tight">300<span className="text-highlight">+</span></div>
+              <div className="font-body text-6xl font-black text-dark mb-3 tracking-tight">300<span className="text-highlight">+</span></div>
               <div className="text-dark font-bold uppercase tracking-widest text-sm mb-2">Operational Hrs Saved</div>
               <div className="text-muted text-sm font-medium">Annually per department</div>
             </div>
@@ -114,7 +114,7 @@ export default function ROIImpact() {
                       With InGov
                     </div>
                     <div className="flex flex-col">
-                      <span className="font-heading font-black text-3xl text-dark mb-1">{item.after}</span>
+                      <span className="font-body font-black text-3xl text-dark mb-1">{item.after}</span>
                       <span className="text-sm font-medium text-dark/70">{item.afterLabel}</span>
                     </div>
                   </div>

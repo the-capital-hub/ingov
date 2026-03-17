@@ -14,17 +14,15 @@ export default function HeroV1() {
 			<div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:3rem_3rem] pointer-events-none z-0" />
 			{/* Dot Pattern Overlay */}
 			<div className="absolute inset-0 bg-[radial-gradient(circle,rgba(255,255,255,0.06)_1px,transparent_1px)] bg-[size:26px_26px] pointer-events-none" />
-			
+
 			{/* Soft Glow Orbs for Depth */}
 			<div className="absolute top-1/4 left-[5%] w-[500px] h-[500px] bg-white/5 rounded-full blur-[130px] pointer-events-none" />
 			<div className="absolute bottom-[0%] right-[5%] w-[600px] h-[600px] bg-white/10 rounded-full blur-[150px] pointer-events-none" />
 
 			{/* Main Content Container - Split Layout */}
 			<div className="relative z-10 w-full max-w-7xl mx-auto px-6 h-full flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16 pt-12 lg:pt-20">
-				
 				{/* 1. Left Column (Text & CTAs) */}
 				<div className="flex-1 w-full flex flex-col items-start text-left lg:max-w-2xl">
-					
 					<FadeUp delay={0.1}>
 						<div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/10 backdrop-blur-md shadow-lg shadow-black/10 text-white/90 text-xs sm:text-sm font-bold uppercase tracking-widest mb-8">
 							<span className="relative flex h-2 w-2">
@@ -37,8 +35,8 @@ export default function HeroV1() {
 
 					<FadeUp delay={0.2}>
 						<h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[4rem] font-heading font-black leading-[1.05] tracking-tight text-white mb-6">
-							Your Architect for <br className="hidden lg:block"/>
-							<span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-white">
+							Your Architect for <br className="hidden lg:block" />
+							<span className="text-transparent bg-clip-text bg-linear-to-r from-highlight via-white to-highlightSecond">
 								Digital Governance
 							</span>
 						</h1>
@@ -46,7 +44,9 @@ export default function HeroV1() {
 
 					<FadeUp delay={0.3}>
 						<p className="text-white/80 text-lg md:text-xl font-medium leading-relaxed max-w-xl mb-10">
-							InGov by iProfit is India's only SaaS-based ERP built from the ground up for government departments. Manage Finance, HR, Assets, Inventory, and Projects securely in one unified platform.
+							InGov by iProfit is India's only SaaS-based ERP built from the
+							ground up for government departments. Manage Finance, HR, Assets,
+							Inventory, and Projects securely in one unified platform.
 						</p>
 					</FadeUp>
 
@@ -75,11 +75,10 @@ export default function HeroV1() {
 					<FadeUp delay={0.5}>
 						{/* Ambient Glow behind image */}
 						<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] h-[90%] bg-blue-500/20 rounded-full blur-[120px] -z-10"></div>
-						
+
 						{/* Window Container */}
-						<div className="relative group" style={{ perspective: '1000px' }}>
+						<div className="relative group" style={{ perspective: "1000px" }}>
 							<div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-black/80 border border-white/10 bg-black/40 backdrop-blur-md transition-all duration-700 lg:[transform:rotateY(-8deg)_rotateX(2deg)] group-hover:[transform:rotateY(0deg)_rotateX(0deg)] group-hover:-translate-y-2 group-hover:shadow-[0_20px_50px_rgba(0,0,0,0.6),0_0_80px_rgba(59,130,246,0.3)] group-hover:border-white/20">
-								
 								{/* Mac-like Header */}
 								<div className="absolute top-0 inset-x-0 h-10 bg-gradient-to-b from-white/10 to-transparent border-b border-white/10 flex items-center px-4 gap-2 z-10 transition-colors group-hover:from-white/20">
 									<div className="flex gap-1.5">
@@ -95,7 +94,7 @@ export default function HeroV1() {
 								{/* The passing Mockup image */}
 								<div className="pt-10 px-0 sm:px-2 lg:px-3 pb-0 sm:pb-2 lg:pb-3 w-full">
 									<div className="relative w-full aspect-[4/3] sm:aspect-[16/10] sm:rounded-b-lg lg:rounded-lg overflow-hidden border-t sm:border border-white/10 shadow-inner bg-[#0f172a]">
-										<Image 
+										<Image
 											src="/images/modules/mockup-img.png"
 											alt="InGov Platform Interface"
 											fill
@@ -109,20 +108,44 @@ export default function HeroV1() {
 							{/* Floating Widgets (Only visible on MD & above) */}
 							<div className="absolute -bottom-6 -left-6 lg:-left-12 px-5 py-3 rounded-2xl bg-white/10 backdrop-blur-xl border border-white/20 shadow-2xl hidden md:flex items-center gap-3 transform translate-y-0 group-hover:-translate-y-2 transition-transform duration-700 delay-100 z-20">
 								<div className="w-10 h-10 rounded-full bg-blue-500/20 border border-blue-500/30 flex items-center justify-center">
-									<svg className="w-5 h-5 text-blue-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-										<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+									<svg
+										className="w-5 h-5 text-blue-200"
+										fill="none"
+										viewBox="0 0 24 24"
+										stroke="currentColor"
+									>
+										<path
+											strokeLinecap="round"
+											strokeLinejoin="round"
+											strokeWidth={2}
+											d="M5 13l4 4L19 7"
+										/>
 									</svg>
 								</div>
 								<div>
-									<div className="text-white text-sm font-bold">Unified Data</div>
-									<div className="text-white/60 text-xs">All modules synced</div>
+									<div className="text-white text-sm font-bold">
+										Unified Data
+									</div>
+									<div className="text-white/60 text-xs">
+										All modules synced
+									</div>
 								</div>
 							</div>
 
 							<div className="absolute -top-6 -right-6 lg:-right-8 px-5 py-3 rounded-2xl bg-white/10 backdrop-blur-xl border border-white/20 shadow-2xl hidden md:flex items-center gap-3 transform translate-y-0 group-hover:-translate-y-2 transition-transform duration-700 z-20">
 								<div className="w-10 h-10 rounded-full bg-blue-500/20 border border-blue-500/30 flex items-center justify-center">
-									<svg className="w-5 h-5 text-blue-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-										<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+									<svg
+										className="w-5 h-5 text-blue-200"
+										fill="none"
+										viewBox="0 0 24 24"
+										stroke="currentColor"
+									>
+										<path
+											strokeLinecap="round"
+											strokeLinejoin="round"
+											strokeWidth={2}
+											d="M13 10V3L4 14h7v7l9-11h-7z"
+										/>
 									</svg>
 								</div>
 								<div>

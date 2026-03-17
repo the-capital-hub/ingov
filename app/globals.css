@@ -2,90 +2,95 @@
 @config "../tailwind.config.ts";
 
 :root {
-  --font-fraunces: 'Fraunces', serif;
-  --font-dm-sans: 'DM Sans', sans-serif;
+	--font-outfit:
+		"Outfit", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+		sans-serif;
+	--font-inter:
+		"Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+		sans-serif;
+	--highlight-color: #ff5500;
 }
 
 html {
-  overflow-x: hidden;
-  scrollbar-width: none;       /* Firefox */
-  -ms-overflow-style: none;   /* IE/Edge */
+	overflow-x: hidden;
+	scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none; /* IE/Edge */
 }
 
 html::-webkit-scrollbar {
-  display: none;              /* Chrome/Safari/Opera */
+	display: none; /* Chrome/Safari/Opera */
 }
 
 body {
-  background-color: #f4faff;
-  color: #0f172a;
-  font-family: var(--font-dm-sans);
-  overflow-x: hidden;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+	background-color: #f4faff;
+	color: #0f172a;
+	font-family: var(--font-outfit);
+	overflow-x: hidden;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
 }
 
 body::-webkit-scrollbar {
-  display: none;
+	display: none;
 }
 
 html.lenis {
-  height: auto;
+	height: auto;
 }
 
 .lenis.lenis-smooth {
-  scroll-behavior: auto !important;
+	scroll-behavior: auto !important;
 }
 
 .lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
+	overscroll-behavior: contain;
 }
 
 @layer utilities {
-  .styled-select option {
-    font-size: 0.875rem;
-  }
+	.styled-select option {
+		font-size: 0.875rem;
+	}
 
-  .scrollbar-none {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
+	.scrollbar-none {
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+	}
 
-  .scrollbar-none::-webkit-scrollbar {
-    display: none;
-  }
+	.scrollbar-none::-webkit-scrollbar {
+		display: none;
+	}
 
-  .section-inner {
-    max-width: 80rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
+	.section-inner {
+		max-width: 80rem;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+	}
 
-  @media (min-width: 768px) {
-    .section-inner {
-      padding-left: 2.5rem;
-      padding-right: 2.5rem;
-    }
-  }
+	@media (min-width: 768px) {
+		.section-inner {
+			padding-left: 2.5rem;
+			padding-right: 2.5rem;
+		}
+	}
 
-  @media (min-width: 1024px) {
-    .section-inner {
-      padding-left: 4rem;
-      padding-right: 4rem;
-    }
-  }
+	@media (min-width: 1024px) {
+		.section-inner {
+			padding-left: 4rem;
+			padding-right: 4rem;
+		}
+	}
 
-  .section-padding {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
+	.section-padding {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+	}
 
-  @media (min-width: 768px) {
-    .section-padding {
-      padding-top: 7rem;
-      padding-bottom: 7rem;
-    }
-  }
+	@media (min-width: 768px) {
+		.section-padding {
+			padding-top: 7rem;
+			padding-bottom: 7rem;
+		}
+	}
 }
